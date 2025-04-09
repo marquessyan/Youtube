@@ -6,23 +6,43 @@
     <meta name="author" content="Yan Marques Soares" />
     <meta name="description" content="Youtube da Shoppe" />
     <meta name="keywords" content="Youtube, Web Design, Portfolio" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Youtube da Shoppe</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/logo.png" alt="Youtube" /></a>
-      <nav><input type="search" placeholder="Pesquisar" /></nav>
-      <img src="img/notificacao.png" alt="Notificação" />
-      <!-- https://www.flaticon.com/br/icones-gratis/notificacao -->
-      <img src="img/perfil.jpg" alt="Perfil de Paulo Henrique" />
+      <div>
+        <a href="https://youtube.com" class="header-logo"
+          ><img src="img/logo.png" alt="Youtube" width="103px" height="43px"
+        /></a>
+      </div>
+      <nav>
+        <input type="search" placeholder="Pesquisar" class="header-search" />
+      </nav>
+      <div class="header-profile">
+        <img
+          src="img/notificacao.png"
+          alt="Notificação"
+          width="24px"
+          height="24px"
+        />
+        <img
+          src="img/perfil.jpg"
+          alt="Perfil de Paulo Henrique"
+          width="32px"
+          height="32px"
+          class="perfil"
+        />
+        <!-- https://www.flaticon.com/br/icones-gratis/notificacao -->
+      </div>
     </header>
     <main>
-      <section>
+      <section class="section-video">
         <div>
           <iframe
-            width="560"
-            height="315"
+            width="853px"
+            height="480px"
             src="https://www.youtube.com/embed/m_-AvwzebXA?si=RBhKWbFaqXPuEYtw"
             title="YouTube video player"
             frameborder="0"
@@ -34,31 +54,45 @@
             ULTIMATE BLAZE FARM - Minecraft Em busca da casa automática #381
           </h2>
         </div>
-        <div>
-          <div>
-            <img src="img/youtuber.jpg" alt="Canal de Viniccius13" />
-            <strong>Viniccius13</strong>
-            <small>13 Milhões de Inscritos</small>
+        <div class="section-video-div-menu">
+          <div class="channel">
+            <div>
+              <div>
+                <img
+                  src="img/youtuber.jpg"
+                  alt="Canal de viniccius13"
+                  class="perfil"
+                  width="40px"
+                  height="40px"
+                />
+              </div>
+              <div>
+                <strong>viniccius13</strong>
+                <small>13 Milhões de Inscritos</small>
+              </div>
+            </div>
+            <div><button type="button">Inscrever-se</button></div>
           </div>
-          <div><button type="button">Inscrever-se</button></div>
-          <div>
-            <button type="button">
-              <img src="img/like.png" alt="Like" />130 mil
-            </button>
-            <button type="button">
-              <img src="img/dislike.png" alt="Deslike" />14
-            </button>
+          <div class="feedback">
+            <div>
+              <button type="button">
+                <img src="img/like.png" alt="Like" />130 mil
+              </button>
+              <button type="button">
+                <img src="img/dislike.png" alt="Deslike" />14
+              </button>
+            </div>
+            <!-- https://www.flaticon.com/free-icons/like -->
+            <div>
+              <button type="button">
+                <img src="img/share.png" alt="" />Compartilhar
+              </button>
+            </div>
+            <div>
+              <button type="button">&bull;&bull;&bull;</button>
+            </div>
+            <!-- https://www.flaticon.com/free-icons/share -->
           </div>
-          <!-- https://www.flaticon.com/free-icons/like -->
-          <div>
-            <button type="button">
-              <img src="img/share.png" alt="" />Compartilhar
-            </button>
-          </div>
-          <div>
-            <button type="button">&bull;&bull;&bull;</button>
-          </div>
-          <!-- https://www.flaticon.com/free-icons/share -->
         </div>
         <hr />
         <div>
@@ -82,7 +116,11 @@
         <div>
           <h3>0 comentários</h3>
           <div>
-            <img src="img/perfil.jpg" alt="Perfil de Paulo Henrique" /><textarea
+            <img
+              src="img/perfil.jpg"
+              alt="Perfil de Paulo Henrique"
+              class="perfil"
+            /><textarea
               name=""
               id=""
               placeholder="Adicione um comentário..."
